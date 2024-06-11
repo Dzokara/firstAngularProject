@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "category": "House",
+    "title": "House is coming new",
+    "image": "assets/img/post-2.jpg",
+    "date": "18 Sep. 2017",
+    "author": "John Smith",
+    "description": "Discover the latest developments in the housing market with our in-depth analysis and insights."
+  },
+  {
+    "id": 2,
+    "category": "Travel",
+    "title": "Travel is coming new",
+    "image": "assets/img/post-5.jpg",
+    "date": "18 Sep. 2017",
+    "author": "Emily Johnson",
+    "description": "Join us as we explore new travel destinations and share tips and experiences from around the world."
+  },
+  {
+    "id": 3,
+    "category": "Park",
+    "title": "Park is coming new",
+    "image": "assets/img/post-7.jpg",
+    "date": "18 Sep. 2017",
+    "author": "Michael Williams",
+    "description": "Stay updated with the latest news about parks, including new attractions and conservation efforts."
+  }
+]

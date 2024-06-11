@@ -1,0 +1,65 @@
+<main id="main">
+
+    <!-- ======= Intro Single ======= -->
+    <section class="intro-single">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-8">
+            <div class="title-single-box">
+              <h1 class="title-single">Our Amazing Properties</h1>
+              <span class="color-text-a">Grid Properties</span>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4">
+            <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a routerLink="/home">Home</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Properties Grid
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Intro Single-->
+
+    <!-- ======= Property Grid ======= -->
+    <section class="property-grid grid">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="grid-option row">
+              <div class="col-4">
+                <label for="priceRange">Price Range:</label>
+                <input type="range" id="priceRange" [(ngModel)]="priceRangeMin" (ngModelChange)="filterProperties()" [min]="0" [max]="25000">
+                <span>{{ priceRangeMin }} - {{ priceRangeMax }}</span>
+              </div>
+              <div class="col-4">
+                <label for="areaRange">Area Range:</label>
+                <input type="range" id="areaRange" [(ngModel)]="areaRangeMin" (ngModelChange)="filterProperties()" [min]="0" [max]="1000">
+                <span>{{ areaRangeMin }} - {{ areaRangeMax }}</span>
+              </div>
+              <div class="col-4">
+                <select class="custom-select" #sort (change)="selectedFilter = sort.value;sortProperties()">
+                  <option value ="All">Select</option>
+                  <option value="newToOld">New to Old</option>
+                  <option value="oldToNew">Old to New</option>
+                  <option value="priceLow">Price - Lowest First</option>
+                  <option value="priceHigh">Price - Highest First</option>
+                </select>
+              </div>
+            </div>
+            
+            
+          </div>
+          <div class="col-md-4" *ngFor="let property of filteredProperties">
+            <app-properties [property]="property"></app-properties>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Property Grid Single-->
+
+  </main><!-- End #main -->

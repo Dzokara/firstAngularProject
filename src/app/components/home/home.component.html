@@ -1,0 +1,255 @@
+<!-- ======= Intro Section ======= -->
+<div class="intro intro-carousel swiper position-relative">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(assets/img/slide-1.jpg)">
+        <div class="overlay overlay-a"></div>
+        <div class="intro-content display-table">
+          <div class="table-cell">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="intro-body">
+                    <h1 class="intro-title mb-4 ">
+                      <span class="color-b">Welcome</span> To
+                      <br> Estate<span class="color-b">Agency</span>
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div><!-- End Intro Section -->
+
+  <main id="main">
+    <!-- ======= Services Section ======= -->
+    <section class="section-services section-t8">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title-wrap d-flex justify-content-between">
+              <div class="title-box">
+                <h2 class="title-a">Our Services</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card-box-c foo">
+              <div class="card-header-c d-flex">
+                <div class="card-box-ico">
+                  <span class="bi bi-cart"></span>
+                </div>
+                <div class="card-title-c align-self-center">
+                  <h2 class="title-c">Lifestyle</h2>
+                </div>
+              </div>
+              <div class="card-body-c">
+                <p class="content-c">
+                  Discover a lifestyle tailored to your needs, with modern amenities and luxurious touches. We provide solutions to enhance your everyday living, making it more comfortable and enjoyable.
+                </p>
+              </div>
+              <div class="card-footer-c">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-box-c foo">
+              <div class="card-header-c d-flex">
+                <div class="card-box-ico">
+                  <span class="bi bi-calendar4-week"></span>
+                </div>
+                <div class="card-title-c align-self-center">
+                  <h2 class="title-c">Loans</h2>
+                </div>
+              </div>
+              <div class="card-body-c">
+                <p class="content-c">
+                  Our loan services are designed to provide you with the financial support you need. Whether it's for a new home, car, or personal expenses, we offer competitive rates and flexible terms.
+                </p>
+              </div>
+              <div class="card-footer-c">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-box-c foo">
+              <div class="card-header-c d-flex">
+                <div class="card-box-ico">
+                  <span class="bi bi-card-checklist"></span>
+                </div>
+                <div class="card-title-c align-self-center">
+                  <h2 class="title-c">Sell</h2>
+                </div>
+              </div>
+              <div class="card-body-c">
+                <p class="content-c">
+                  Selling your property has never been easier. We provide comprehensive services to help you market and sell your property quickly and at the best possible price.
+                </p>
+              </div>
+              <div class="card-footer-c">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+    
+
+    <!-- ======= Latest Properties Section ======= -->
+    <section class="section-property section-t8">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title-wrap d-flex justify-content-between">
+              <div class="title-box">
+                <h2 class="title-a">Latest Properties</h2>
+              </div>
+              <div class="title-link">
+                <a routerLink="/properties">All Property
+                  <span class="bi bi-chevron-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-4" *ngFor="let property of properties">
+            <app-properties [property]="property"></app-properties>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Agents Section ======= -->
+    <section class="section-agents section-t8">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title-wrap d-flex justify-content-between">
+              <div class="title-box">
+                <h2 class="title-a">Our Agents</h2>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4" *ngFor="let agent of agents">
+            <app-agent [agent]="agent"></app-agent>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Agents Section -->
+
+    <section class="section-news section-t8">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title-wrap d-flex justify-content-between">
+              <div class="title-box">
+                <h2 class="title-a">Latest News</h2>
+              </div>
+              <div class="title-link">
+                <a routerLink="/blog">All News
+                  <span class="bi bi-chevron-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row">
+          
+          <div class="col-md-4" *ngFor="let snews of news">
+            <app-news [news]="snews"></app-news>
+          </div>
+        
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- ======= Testimonials Section ======= -->
+<section class="section-testimonials section-t8 nav-arrow-a">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="title-wrap d-flex justify-content-between">
+          <div class="title-box">
+            <h2 class="title-a">Testimonials</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="testimonial-carousel" class="swiper">
+      <div class="swiper-wrapper">
+
+        <div class="carousel-item-a swiper-slide">
+          <div class="testimonials-box">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <div class="testimonial-img">
+                  <img src="assets/img/testimonial-1.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div class="testimonial-ico">
+                  <i class="bi bi-chat-quote-fill"></i>
+                </div>
+                <div class="testimonials-content">
+                  <p class="testimonial-text">
+                    Working with this team was an amazing experience. They helped us find our dream home and guided us through every step of the process. I highly recommend their services!
+                  </p>
+                </div>
+                <div class="testimonial-author-box">
+                  <img src="assets/img/mini-testimonial-1.jpg" alt="" class="testimonial-avatar">
+                  <h5 class="testimonial-author">Albert & Erika</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- End carousel item -->
+
+        <div class="carousel-item-a swiper-slide">
+          <div class="testimonials-box">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <div class="testimonial-img">
+                  <img src="assets/img/testimonial-2.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div class="testimonial-ico">
+                  <i class="bi bi-chat-quote-fill"></i>
+                </div>
+                <div class="testimonials-content">
+                  <p class="testimonial-text">
+                    We are so grateful for the help we received from this team. They went above and beyond to ensure we found the perfect home for our family. Thank you!
+                  </p>
+                </div>
+                <div class="testimonial-author-box">
+                  <img src="assets/img/mini-testimonial-2.jpg" alt="" class="testimonial-avatar">
+                  <h5 class="testimonial-author">Pablo & Emma</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- End carousel item -->
+
+      </div>
+    </div>
+    <div class="testimonial-carousel-pagination carousel-pagination"></div>
+
+  </div>
+</section><!-- End Testimonials Section -->
+
+
+  </main><!-- End #main -->

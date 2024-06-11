@@ -1,0 +1,84 @@
+[
+    {
+        "id": 1,
+        "name": "Margaret Sotillo",
+        "surname": "Escala",
+        "image": "assets/img/agent-4.jpg",
+        "description": "Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.",
+        "phone": "+54 356 945234",
+        "email": "agentsxample.com",
+        "socials": [
+          {
+            "platform": "Facebook",
+            "url": "#"
+          },
+          {
+            "platform": "Twitter",
+            "url": "#"
+          },
+          {
+            "platform": "Instagram",
+            "url": "#"
+          },
+          {
+            "platform": "LinkedIn",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Stiven Spilver",
+        "surname": "Darw",
+        "image": "assets/img/agent-1.jpg",
+        "description": "Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.",
+        "phone": "+54 356 945234",
+        "email": "agentsxample.com",
+        "socials": [
+          {
+            "platform": "Facebook",
+            "url": "#"
+          },
+          {
+            "platform": "Twitter",
+            "url": "#"
+          },
+          {
+            "platform": "Instagram",
+            "url": "#"
+          },
+          {
+            "platform": "LinkedIn",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Emma Toledo",
+        "surname": "Cascada",
+        "image": "assets/img/agent-5.jpg",
+        "description": "Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.",
+        "phone": "+54 356 945234",
+        "email": "agentsexample.com",
+        "socials": [
+          {
+            "platform": "Facebook",
+            "url": "#"
+          },
+          {
+            "platform": "Twitter",
+            "url": "#"
+          },
+          {
+            "platform": "Instagram",
+            "url": "#"
+          },
+          {
+            "platform": "LinkedIn",
+            "url": "#"
+          }
+        ]
+      }
+]
+  

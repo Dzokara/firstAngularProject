@@ -1,0 +1,166 @@
+[
+{ "id": 1,
+"agent":1,
+"title": "206 Mount Olive Road Two",
+"address": {
+  "street": "206 Mount Olive Road",
+  "city": "Olive Town",
+  "state": "OT",
+  "zipcode": "12345"
+},
+"description": "A beautiful house located in the heart of Olive Town with modern amenities and spacious rooms.",
+"images": [
+  {
+    "url": "assets/img/property-6.jpg",
+    "description": "Front view"
+  },
+  {
+    "url": "assets/img/property-6a.jpg",
+    "description": "Living room"
+  }
+],
+"price": {
+  "type": "rent",
+  "amount": 12000,
+  "currency": "USD"
+},
+"details_link": "property-single.html",
+"features": {
+  "area": "340",
+  "beds": 2,
+  "baths": 2,
+  "garages": 1
+},
+"amenities": [
+  "Air Conditioning",
+  "Swimming Pool",
+  "Garage",
+  "Garden"
+],
+"date": "2024-06-01"
+},
+{
+"id": 2,
+"agent":3,
+"title": "157 West Central Park",
+"address": {
+  "street": "157 West Central Park",
+  "city": "Central City",
+  "state": "CC",
+  "zipcode": "67890"
+},
+"description": "A luxury apartment overlooking Central Park with top-notch facilities and great views.",
+"images": [
+  {
+    "url": "assets/img/property-3.jpg",
+    "description": "Exterior view"
+  },
+  {
+    "url": "assets/img/property-3a.jpg",
+    "description": "Bedroom"
+  }
+],
+"price": {
+  "type": "rent",
+  "amount": 12000,
+  "currency": "USD"
+},
+"details_link": "property-single.html",
+"features": {
+  "area": "340",
+  "beds": 2,
+  "baths": 4,
+  "garages": 1
+},
+"amenities": [
+  "Gym",
+  "Concierge Service",
+  "Parking",
+  "Elevator"
+],
+"date": "2024-06-03"
+},
+{
+"id": 3,
+"agent":2,
+"title": "245 Azabu Nishi Park let",
+"address": {
+  "street": "245 Azabu Nishi Park",
+  "city": "Azabu",
+  "state": "AZ",
+  "zipcode": "54321"
+},
+"description": "An elegant property located in a serene neighborhood with beautiful parks and close to amenities.",
+"images": [
+  {
+    "url": "assets/img/property-7.jpg",
+    "description": "Front view"
+  },
+  {
+    "url": "assets/img/property-7a.jpg",
+    "description": "Kitchen"
+  }
+],
+"price": {
+  "type": "rent",
+  "amount": 12000,
+  "currency": "USD"
+},
+"details_link": "property-single.html",
+"features": {
+  "area": "340",
+  "beds": 2,
+  "baths": 4,
+  "garages": 1
+},
+"amenities": [
+  "Playground",
+  "Security System",
+  "Balcony",
+  "Basement"
+],
+"date": "2024-06-05"
+},
+{
+"id": 4,
+"agent":1,
+"title": "204 Montal South Bela Two",
+"address": {
+  "street": "204 Montal South Bela",
+  "city": "Montal",
+  "state": "MT",
+  "zipcode": "98765"
+},
+"description": "A charming house in a quiet area with modern facilities and a large backyard.",
+"images": [
+  {
+    "url": "assets/img/property-10.jpg",
+    "description": "Exterior view"
+  },
+  {
+    "url": "assets/img/property-10a.jpg",
+    "description": "Bathroom"
+  }
+],
+"price": {
+  "type": "rent",
+  "amount": 20000,
+  "currency": "USD"
+},
+"details_link": "property-single.html",
+"features": {
+  "area": "500",
+  "beds": 2,
+  "baths": 4,
+  "garages": 1
+},
+"amenities": [
+  "Fireplace",
+  "Deck",
+  "Laundry Room",
+  "Attic"
+],
+"date": "2021-06-07"
+}
+]
+       

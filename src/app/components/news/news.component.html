@@ -1,0 +1,20 @@
+<div class="card-box-b card-shadow news-box">
+    <div class="img-box-b">
+      <img [src]="news.image" alt="" class="img-b img-fluid">
+    </div>
+    <div class="card-overlay">
+      <div class="card-header-b">
+        <div class="card-category-b">
+          <a href="#" class="category-b">{{ news.category }}</a>
+        </div>
+        <div class="card-title-b">
+          <h2 class="title-2">
+            <a [routerLink]="['/blog', news.id]">{{ news.title }}</a>
+          </h2>
+        </div>
+        <div class="card-date">
+          <span class="date-b">{{ news.date | date: 'dd MMM. yyyy' }}</span>
+        </div>
+      </div>
+    </div>
+  </div>

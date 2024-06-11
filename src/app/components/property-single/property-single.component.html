@@ -1,0 +1,213 @@
+<main id="main">
+
+    <!-- ======= Intro Single ======= -->
+    <section class="intro-single">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-8">
+            <div class="title-single-box">
+              <h1 class="title-single">{{property.title}}</h1>
+              <span class="color-text-a">{{property.address.city}}</span>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4">
+            <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="property-grid.html">Properties</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Single Property
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Intro Single-->
+
+    <!-- ======= Property Single ======= -->
+    <section class="property-single nav-arrow-b">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div id="property-single-carousel">
+              <img src="../{{property.images[0].url}}" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+
+            <div class="row justify-content-between">
+              <div class="col-md-5 col-lg-4">
+                <div class="property-price d-flex justify-content-center foo">
+                  <div class="card-header-c d-flex">
+                    <div class="card-box-ico">
+                      <span class="bi bi-cash">$</span>
+                    </div>
+                    <div class="card-title-c align-self-center">
+                      <h5 class="title-c">{{property.price.amount}}</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="property-summary">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="title-box-d section-t4">
+                        <h3 class="title-d">Quick Summary</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="summary-list">
+                    <ul class="list">
+                      <li class="d-flex justify-content-between">
+                        <strong>Location:</strong>
+                        <span>{{property.address.city }},{{property.address.street}}</span>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <strong>Area:</strong>
+                        <span>{{property.features.area}}m
+                          <sup>2</sup>
+                        </span>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <strong>Beds:</strong>
+                        <span>{{property.features.beds}}</span>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <strong>Baths:</strong>
+                        <span>{{property.features.baths}}</span>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <strong>Garage:</strong>
+                        <span>{{property.features.garages}}</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7 col-lg-7 section-md-t3">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="title-box-d">
+                      <h3 class="title-d">Property Description</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="property-description">
+                  <p class="description color-text-a">
+                  {{property.description}}
+                  </p>
+                </div>
+                <div class="row section-t3">
+                  <div class="col-sm-12">
+                    <div class="title-box-d">
+                      <h3 class="title-d">Amenities</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="amenities-list color-text-a">
+                  <ul class="list-a no-margin">
+                    <li *ngFor="let amenity of property.amenities">{{ amenity }}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="row section-t3">
+              <div class="col-sm-12">
+                <div class="title-box-d">
+                  <h3 class="title-d">Contact Agent</h3>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-lg-4">
+                <img src="../{{agent.image}}" alt="" class="img-fluid">
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="property-agent">
+                  <h4 class="title-agent">{{agent.name}}</h4>
+                  <ul class="list-unstyled">
+                    <li class="d-flex justify-content-between">
+                      <strong>Phone:</strong>
+                      <span class="color-text-a">{{agent.phone}}</span>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                      <strong>Email:</strong>
+                      <span class="color-text-a">{{agent.email}}</span>
+                    </li>
+                  </ul>
+                  <div class="socials-a">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <a href="{{agent.socials[0].url}}">
+                          <i class="bi bi-facebook" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="{{agent.socials[1].url}}">
+                          <i class="bi bi-twitter" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="{{agent.socials[2].url}}">
+                          <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="{{agent.socials[3].url}}">
+                          <i class="bi bi-linkedin" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-4 ">
+                <div class="property-contact">
+                  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="form-a">
+                    <div class="row">
+                      <div class="col-md-12 mb-1 custom-form-field">
+                        <mat-form-field appearance="fill">
+                          <mat-label>Name *</mat-label>
+                          <input matInput formControlName="name" placeholder="Name" required>
+                          <mat-error *ngIf="contactForm.get('name')?.hasError('required')">Name is required</mat-error>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-md-12 mb-1 custom-form-field">
+                        <mat-form-field appearance="fill">
+                          <mat-label>Email *</mat-label>
+                          <input matInput formControlName="email" placeholder="Email" required>
+                          <mat-error *ngIf="contactForm.get('email')?.hasError('required')">Email is required</mat-error>
+                          <mat-error *ngIf="contactForm.get('email')?.hasError('email')">Invalid email</mat-error>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-md-12 mb-1 custom-form-field">
+                        <mat-form-field appearance="fill">
+                          <mat-label>Comment *</mat-label>
+                          <textarea matInput formControlName="comment" placeholder="Comment" required></textarea>
+                          <mat-error *ngIf="contactForm.get('comment')?.hasError('required')">Comment is required</mat-error>
+                        </mat-form-field>
+                      </div>                      
+                      <div class="col-md-12 mt-3">
+                        <button mat-raised-button color="primary" [disabled]="contactForm.invalid">Send Message</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Property Single-->
+
+  </main><!-- End #main -->

@@ -1,0 +1,94 @@
+<main id="main">
+
+  <!-- ======= Intro Single ======= -->
+  <section class="intro-single">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-8">
+          <div class="title-single-box">
+            <h1 class="title-single">We Create Amazing Designs for Creative Minds</h1>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a routerLink="/home">Home</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                About
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Intro Single-->
+
+  <!-- ======= About Section ======= -->
+  <section class="section-about">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 position-relative">
+          <div class="about-img-box">
+            <img src="assets/img/slide-about-1.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="sinse-box">
+            <h3 class="sinse-title">EstateAgency
+              <span></span>
+              <br> Since 2017
+            </h3>
+            <p>Art & Creative</p>
+          </div>
+        </div>
+        <div class="col-md-12 section-t8 position-relative">
+          <div class="row">
+            <div class="col-md-6 col-lg-5">
+              <img src="assets/img/about-2.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-2  d-none d-lg-block position-relative">
+              <div class="title-vertical d-flex justify-content-start">
+                <span>EstateAgency Exclusive Property</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-5 section-md-t3">
+              <div class="title-box-d">
+                <h3 class="title-d">We Design
+                  <span class="color-d">Beautiful</span> Spaces
+                  <br> for You.
+                </h3>
+              </div>
+              <p class="color-text-a">
+                We specialize in creating stunning designs that inspire. Our team is dedicated to providing you with the best possible experience, ensuring your vision comes to life.
+              </p>
+              <p class="color-text-a">
+                Our designs are not just beautiful, but functional too. We understand the importance of creating spaces that work for you and your lifestyle.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======Team Section ======= -->
+  <section class="section-agents section-t8">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-wrap d-flex justify-content-between">
+            <div class="title-box">
+              <h2 class="title-a">Meet Our Team</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4" *ngFor="let agent of agents">
+          <app-agent [agent]="agent"></app-agent>
+        </div>
+      </div>
+    </div>
+  </section><!-- End About Section-->
+
+</main><!-- End #main -->

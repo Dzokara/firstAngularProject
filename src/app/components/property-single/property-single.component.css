@@ -1,0 +1,9 @@
+.custom-form-field mat-form-field {
+    width: 100%;
+    padding-top:10px;
+    padding-bottom:10px;
+  }
+  
+ .custom-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label {
+    padding-top:10px;
+  }
